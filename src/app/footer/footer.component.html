@@ -1,0 +1,13 @@
+<div class="footer">
+  <h1>Footer</h1>
+  <ul *ngFor="let data of users">
+    <li>{{ data.name }}</li>
+  </ul>
+
+  <hr>
+  <!--fetching data from api-->
+  <ul *ngFor="let data of apiUsers| slice:0:limit">
+    <li>{{ data.title }}</li>
+  </ul>
+
+</div>

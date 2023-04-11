@@ -1,0 +1,30 @@
+<!-- <h1>Angular Routing</h1>
+<a routerLink="">Home</a>
+<br>
+<a routerLink="about">About</a>
+<br>
+<a routerLink="user">User</a>
+<br><br><br>
+
+<a routerLink="user/1">user1</a>
+<br>
+<a routerLink="user/2">user2</a>
+<br>
+<a routerLink="user/3">user3</a>
+<br>
+
+<router-outlet></router-outlet> -->
+
+<h1>Service Example</h1>
+<!-- <ul *ngFor="let data of memberData">
+  <li>{{ data.name }}</li>
+</ul> -->
+<ul *ngFor="let data of users">
+  <li>{{ data.name }}</li>
+</ul>
+<hr>
+<ul *ngFor="let data of apiUsers| slice:0:limit">
+  <li>{{ data.title }}</li>
+</ul>
+
+<app-footer></app-footer>
